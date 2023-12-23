@@ -11,4 +11,7 @@ RUN apt-get update && \
 COPY --from=agent /usr/local/bin/jenkins-agent /usr/local/bin/jenkins-agent
 COPY --from=agent /usr/share/jenkins/agent.jar /usr/share/jenkins/agent.jar
 
+
+
+
 ENTRYPOINT ["/usr/local/bin/jenkins-agent"]
